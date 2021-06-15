@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'materialize/css/materialize.css' %} ">
+    <link rel="stylesheet" href="{% static 'my-style.css' %} ">
+    <title>Welcome to Facebook :: by Anilésio Xavier</title>
+  </head>
+  <body>
+
+    <div class="navbar-fixed">
+        <div class="principal-menu">
+          <div class="row">
+              <div class="col s12 m4 l4 hide-on-med-and-down">
+                  <span class="fab fa-facebook texto-3"></span>
+                  <!-- <input type="text" class="browser-default estilo-input"> -->
+              </div>
+
+              <div class="col s12 m4 l4 hide-on-med-and-down center">
+                <div class="sub-menu">
+                  <a href="" class="sub-menu-active sub-menu-item">
+                    <span class="fa fa-home texto-2"></span>
+                    
+                  </a>
+                  <a href="" class="sub-menu-item">
+                    <span class="fa fa-user texto-2 espaco-m-left-1"></span>
+                  </a>
+                  <a href="" class="sub-menu-item">
+                    <span class="fa fa-users texto-2 espaco-m-left-1"></span>
+                  </a>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4 hide-on-med-and-down right-align">
+              <div class="side-menu">
+                
+
+                <a href=""><img src="{% static 'photo.jpeg' %}" alt="Anilésio Xavier" style="border-radius: 50%; width: 40px; height: 40px;"></a>
+              </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+    {% block content %}
+    {% endblock %}
+
+    <script type="text/javascript" src="{% static 'jquery/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquery/jquery-3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'materialize/js/materialize.js' %}"></script>
+  </body>
+</html>
